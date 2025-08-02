@@ -1,7 +1,7 @@
 export default function Contact() {
   return (
-    <section className="bg-[#111] px-6 py-20 text-white">
-      <h2 className="text-4xl font-bold text-center mb-12 text-indigo-400 drop-shadow-md">
+    <section className="bg-[#ffffffee] px-6 py-20 text-white">
+      <h2 className="text-4xl font-bold text-center mb-12 text-[#000] drop-shadow-md">
         📬 Contact Us
       </h2>
 

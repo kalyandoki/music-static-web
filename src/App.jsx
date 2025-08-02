@@ -5,14 +5,20 @@ import NowPlaying from "./components/NowPlaying";
 import Episodes from "./components/Episodes";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import RadioPlayer from "./components/RadioPlayer";
+import Podcast from "./components/Podcast";
+import AudioRoom from "./components/AudioRoom";
 
 export default function App() {
   return (
     <div className="bg-black text-white font-sans">
       <MainHeader />
       <Hero />
-      <NowPlaying />
-      <Episodes />
+      <RadioPlayer />
+      <Podcast />
+      <AudioRoom />
+      {/* <NowPlaying /> */}
+      {/* <Episodes /> */}
       <Contact />
       <Footer />
     </div>
