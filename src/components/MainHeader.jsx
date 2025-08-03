@@ -2,7 +2,7 @@ import { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import { FaSearch } from "react-icons/fa";
 
-import heroImg from "../assets/images/nri1.png";
+import heroImg from "../assets/images/npi4.png";
 
 export default function MainHeader() {
   const [isOpen, setIsOpen] = useState(false);

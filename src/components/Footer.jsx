@@ -1,4 +1,4 @@
-import heroImg from "../assets/images/nri1.png";
+import heroImg from "../assets/images/npi4.png";
 
 import {
   FaFacebookF,
