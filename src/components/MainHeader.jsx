@@ -11,13 +11,15 @@ export default function MainHeader() {
     <header className="bg-black bg-opacity-80 backdrop-blur-md sticky top-0 z-50 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
         {/* === Logo === */}
-        <div className="flex items-center space-x-2 bg-[#efeded] rounded-full">
-          <img
-            src={heroImg}
-            alt="SwaraCast Logo"
-            className="w-10 h-10 md:w-18 md:h-18 object-contain rounded-full"
-          />
-        </div>
+        <a href="#home">
+          <div className="flex items-center space-x-2 bg-[#efeded] rounded-full">
+            <img
+              src={heroImg}
+              alt="SwaraCast Logo"
+              className="w-10 h-10 md:w-18 md:h-18 object-contain rounded-full"
+            />
+          </div>
+        </a>
 
         {/* === Desktop Nav === */}
         <nav className="hidden md:flex space-x-6 text-lg md:text-xl text-white">
