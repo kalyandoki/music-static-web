@@ -13,24 +13,35 @@ const Footer = () => {
     <footer className="w-full bg-[#0f1d44f1] text-white px-4 sm:px-8 md:px-12 lg:px-20 py-12">
       <div className="max-w-7xl mx-auto grid gap-10 text-sm sm:text-base">
         {/* Top Footer Section */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8 items-center">
           {/* === Logo === */}
-          <a href="#home">
-            <div className="flex items-center">
-              <img
-                src={heroImg}
-                alt="SwaraCast Logo"
-                className="w-10 h-10 md:w-18 md:h-18 object-contain rounded-full"
-              />
-              <h3 className="text-[#fff] font-bold text-2xl">Voice Of NRI</h3>
+          <a href="#home" className=" w-full max-w-md mx-auto">
+            <div className="p-6 rounded-2xl transition-all duration-300 text-center flex flex-col items-start space-y-2">
+              <div className="flex items-center">
+                <img
+                  src={heroImg}
+                  alt="SwaraCast Logo"
+                  className="w-10 h-10 md:w-18 md:h-18 object-contain rounded-full"
+                />
+                <h3 className="text-white font-extrabold text-lg md:text-xl">
+                  Voice Of NRI
+                </h3>
+              </div>
+              <p className="text-gray-300 text-sm md:text-base leading-relaxed">
+                Voice of NRI is a vibrant platform amplifying the stories,
+                talents, and perspectives of Non-Resident Indians worldwide.
+                From cultural roots to global impact, we connect communities
+                beyond borders.
+              </p>
             </div>
           </a>
+
           <div>
             <h2 className="text-lg sm:text-xl font-bold text-white mb-4 font-serif hover:text-yellow-400 transition duration-300">
               TALK TO US
             </h2>
             <hr className="border-gray-500 mb-3" />
-            <p>contact@voiceofnri.com</p>
+            <p>support@voiceofnri.com</p>
           </div>
 
           {/* 5. Follow Us */}

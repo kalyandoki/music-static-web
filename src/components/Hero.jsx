@@ -19,7 +19,7 @@ export default function Hero() {
           </p>
           <a href="/radio?autoplay=true">
             <button className="px-6 py-3 bg-[#df7307fd] hover:bg-[#966f49fd] transition rounded-2xl font-semibold shadow-md text-white">
-              🎶 Start Listening
+              <span className="text-[#fff]">🎶</span> Start Listening
             </button>
           </a>
         </div>

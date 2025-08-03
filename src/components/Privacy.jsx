@@ -4,109 +4,137 @@ export default function Privacy() {
   return (
     <div className="max-w-6xl mx-auto px-6 py-12 bg-[#ffffffc8] text-gray-900 rounded-xl shadow-xl">
       <h1 className="text-3xl md:text-4xl font-bold mb-8 text-center text-[#b86609]">
-        Privacy Policy
+        Privacy Policy - Voice of NRI App
       </h1>
 
-      <p className="mb-6">
-        <strong>Voice Of NRI</strong> values your privacy. This Privacy Policy
-        explains how we collect, use, and protect your information.
+      <p className="mb-6 text-center text-sm text-gray-600">
+        Effective Date: August 03, 2025
       </p>
 
       <div className="space-y-6 text-base leading-relaxed">
         <div>
           <h2 className="font-semibold text-xl text-[#000] mb-2">
-            1. Information We Collect
+            1. Introduction
+          </h2>
+          <p>
+            Voice of NRI ("we", "our", or "us") respects your privacy. This
+            Privacy Policy explains how we collect, use, and protect your
+            personal information when you use our mobile application ("Voice of
+            NRI" or "the App").
+          </p>
+        </div>
+
+        <div>
+          <h2 className="font-semibold text-xl text-[#000] mb-2">
+            2. Information We Collect
           </h2>
           <ul className="list-disc list-inside space-y-1">
             <li>
-              <strong>Personal Information:</strong> Name, email address, and
-              account details provided during registration.
+              <strong>Personal Information:</strong> Name, email address, phone
+              number (during registration), profile picture (optional)
             </li>
             <li>
-              <strong>Usage Data:</strong> Information about how you interact
-              with the app (e.g., device type, IP address, usage frequency).
+              <strong>Audio Room Activity:</strong> Mic access, voting, comments
+            </li>
+            <li>
+              <strong>Technical Information:</strong> Device ID, IP address, OS
+              version, usage statistics, mic/network permissions
+            </li>
+            <li>
+              <strong>Third-Party Data (Agora SDK):</strong> Voice streaming and
+              participation data
             </li>
           </ul>
         </div>
 
         <div>
           <h2 className="font-semibold text-xl text-[#000] mb-2">
-            2. How We Use Your Information
+            3. How We Use Your Information
           </h2>
           <ul className="list-disc list-inside space-y-1">
-            <li>Provide and improve our services.</li>
-            <li>Communicate updates, offers, and support.</li>
-            <li>Analyze app performance and user behavior.</li>
+            <li>Enable access to radio, podcasts, and audio rooms</li>
+            <li>Authenticate users and manage sessions</li>
+            <li>Allow voice participation and interactions</li>
+            <li>Improve user experience and app performance</li>
+            <li>Comply with legal obligations</li>
           </ul>
         </div>
 
         <div>
           <h2 className="font-semibold text-xl text-[#000] mb-2">
-            3. Sharing Your Information
+            4. Data Sharing
           </h2>
+          <p>
+            We do not sell or rent your data. We may share limited data with:
+          </p>
           <ul className="list-disc list-inside space-y-1">
-            <li>
-              We do not sell, trade, or share your personal information with
-              third parties, except:
-            </li>
-            <li>With trusted partners for operational purposes.</li>
-            <li>When required by law.</li>
+            <li>Agora.io, for real-time audio processing</li>
+            <li>Legal authorities, if required by law</li>
           </ul>
         </div>
 
         <div>
           <h2 className="font-semibold text-xl text-[#000] mb-2">
-            4. Data Security
+            5. Data Retention
           </h2>
           <p>
-            We use industry-standard measures to protect your data. However, no
-            method of electronic storage is 100% secure.
+            We retain your data only as long as needed for the purposes outlined
+            in this policy, or as required by law.
           </p>
         </div>
 
         <div>
           <h2 className="font-semibold text-xl text-[#000] mb-2">
-            5. User Rights
+            6. Your Rights
+          </h2>
+          <ul className="list-disc list-inside space-y-1">
+            <li>View and update your profile</li>
+            <li>Request account deletion</li>
+            <li>Withdraw mic/camera permissions anytime via device settings</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 className="font-semibold text-xl text-[#000] mb-2">
+            7. Security
           </h2>
           <p>
-            You can access, update, or delete your data at any time by
-            contacting us. Opt-out of promotional emails by clicking the
-            unsubscribe link in the email.
+            We use industry-standard encryption and access controls to protect
+            your data.
           </p>
         </div>
 
         <div>
           <h2 className="font-semibold text-xl text-[#000] mb-2">
-            6. Third-Party Services
+            8. Children's Privacy
           </h2>
           <p>
-            Voice Of NRI may integrate with third-party services (e.g., payment
-            processors or analytics tools). Please review their policies for
-            additional details.
+            Voice of NRI is not intended for users under the age of 13. We do
+            not knowingly collect data from children.
           </p>
         </div>
 
         <div>
           <h2 className="font-semibold text-xl text-[#000] mb-2">
-            7. Changes to Privacy Policy
+            9. Changes to This Policy
           </h2>
           <p>
-            We may update this policy periodically. Continued use of the app
-            constitutes your acceptance of the revised policy.
+            We may update this Privacy Policy. Changes will be posted within the
+            app and updated with the effective date.
           </p>
         </div>
 
         <div>
           <h2 className="font-semibold text-xl text-[#000] mb-2">
-            8. Contact Information
+            10. Contact Us
           </h2>
           <p>
-            For questions about this Privacy Policy, please contact us at:{" "}
+            If you have questions, email us at:{" "}
             <a
-              href="mailto:contact@rayacreations.com"
+              href="mailto:support@voiceofnri.com"
               className="text-blue-600 underline"
             >
-              contact@voiceofnri.com
+              support@voiceofnri.com
             </a>
           </p>
         </div>
