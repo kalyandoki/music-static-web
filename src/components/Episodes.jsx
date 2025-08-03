@@ -43,13 +43,13 @@ export default function Episodes() {
                 <h3 className="text-lg pl-2 sm:text-xl font-semibold text-indigo-300 mt-2 sm:mt-0">
                   {ep.title}
                 </h3>
-                <p className="text-sm pl-2 text-gray-400 mb-3">
+                <p className="text-sm pl-2 text-gray-400 mb-3 mt-2">
                   by {ep.artist}
                 </p>
 
                 <audio
                   controls
-                  className="w-full md:w-10/12 rounded-2xl focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                  className="w-full md:w-10/12 rounded-2xl focus:outline-none focus:ring-2 focus:ring-indigo-500 md:mt-6"
                 >
                   <source src={ep.url} type="audio/mpeg" />
                   Your browser does not support the audio element.

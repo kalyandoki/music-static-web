@@ -35,6 +35,13 @@ export default function App() {
     return () => window.removeEventListener("hashchange", updateHash);
   }, []);
 
+  // Scroll to top for terms/privacy pages
+  useEffect(() => {
+    if (hash === "terms" || hash === "privacy") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  }, [hash]);
+
   const showMainSections = hash !== "terms" && hash !== "privacy";
 
   return (
