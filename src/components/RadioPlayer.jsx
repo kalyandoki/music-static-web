@@ -1,5 +1,5 @@
 import { FaBroadcastTower } from "react-icons/fa";
-import radioImg from "../assets/images/rd2.webp"; // 🔁 Replace with your own image
+import radioImg from "../assets/images/rd2.webp";
 import radioBg from "../assets/images/hero-bg1.jpg";
 const RadioPlayer = () => {
   return (

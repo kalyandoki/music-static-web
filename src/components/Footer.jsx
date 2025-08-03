@@ -1,11 +1,3 @@
-// export default function Footer() {
-//   return (
-//     <footer className="bg-black py-6 text-center text-gray-500">
-//       © 2025 Vice Of NRI — All Rights Reserved.
-//     </footer>
-//   );
-// }
-
 import heroImg from "../assets/images/nri.jpg";
 
 import {

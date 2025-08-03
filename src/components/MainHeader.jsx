@@ -15,7 +15,7 @@ export default function MainHeader() {
           <img
             src={heroImg}
             alt="SwaraCast Logo"
-            className="w-10 h-10 md:w-20 md:h-20 object-contain rounded-full"
+            className="w-10 h-10 md:w-18 md:h-18 object-contain rounded-full"
           />
         </div>
 
