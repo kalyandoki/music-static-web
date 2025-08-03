@@ -21,16 +21,16 @@ export default function MainHeader() {
 
         {/* === Desktop Nav === */}
         <nav className="hidden md:flex space-x-6 text-lg md:text-xl text-white">
-          <a href="#" className="hover:text-[#df7307fd] transition">
+          <a href="#home" className="hover:text-[#df7307fd] transition">
             Home
           </a>
-          <a href="#" className="hover:text-[#df7307fd] transition">
+          <a href="#radio" className="hover:text-[#df7307fd] transition">
             Radio
           </a>
-          <a href="#" className="hover:text-[#df7307fd] transition">
+          <a href="#podcast" className="hover:text-[#df7307fd] transition">
             Podcast
           </a>
-          <a href="#" className="hover:text-[#df7307fd] transition">
+          <a href="#audio-room" className="hover:text-[#df7307fd] transition">
             Audio Room
           </a>
           {/* <a href="#" className="hover:text-[#df7307fd] transition">
@@ -62,16 +62,22 @@ export default function MainHeader() {
       {/* === Mobile Menu === */}
       {isOpen && (
         <div className="md:hidden bg-[#111] text-white px-6 pb-4 space-y-3 animate-slide-down">
-          <a href="#" className="block hover:text-[#df7307fd] transition">
+          <a href="#home" className="block hover:text-[#df7307fd] transition">
             Home
           </a>
-          <a href="#" className="block hover:text-[#df7307fd] transition">
+          <a href="#radio" className="block hover:text-[#df7307fd] transition">
             Radio
           </a>
-          <a href="#" className="block hover:text-[#df7307fd] transition">
+          <a
+            href="#podcast"
+            className="block hover:text-[#df7307fd] transition"
+          >
             Podcast
           </a>
-          <a href="#" className="block hover:text-[#df7307fd] transition">
+          <a
+            href="#audio-room"
+            className="block hover:text-[#df7307fd] transition"
+          >
             Audio Room
           </a>
           {/* <a href="#" className="block hover:text-[#df7307fd] transition">

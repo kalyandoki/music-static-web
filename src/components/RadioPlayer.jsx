@@ -4,7 +4,7 @@ import radioBg from "../assets/images/hero-bg1.jpg";
 const RadioPlayer = () => {
   return (
     <section
-      className="bg-cover bg-center bg-no-repeat text-white"
+      className="bg-cover bg-center bg-no-repeat text-white pt-10"
       style={{ backgroundImage: `url(${radioBg})` }}
     >
       <div className="bg-black/70 px-4 py-20">

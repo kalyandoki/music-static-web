@@ -13,13 +13,26 @@ export default function App() {
   return (
     <div className="bg-black text-white font-sans">
       <MainHeader />
-      <Hero />
-      <RadioPlayer />
-      <Podcast />
-      <AudioRoom />
-      {/* <NowPlaying /> */}
-      {/* <Episodes /> */}
-      <Contact />
+
+      <section id="home">
+        <Hero />
+      </section>
+
+      <section id="radio">
+        <RadioPlayer />
+      </section>
+
+      <section id="podcast">
+        <Podcast />
+      </section>
+
+      <section id="audio-room">
+        <AudioRoom />
+      </section>
+
+      <section id="contact-us">
+        <Contact />
+      </section>
       <Footer />
     </div>
   );

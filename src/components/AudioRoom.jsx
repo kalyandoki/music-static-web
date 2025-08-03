@@ -43,7 +43,7 @@ export default function AudioRoom() {
   const firstFive = images.slice(0, 6);
   const remaining = images.length - 5;
   return (
-    <section className="bg-black px-4 py-20 text-white">
+    <section className="bg-black px-4 py-20 text-white pt-30">
       <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 text-[#fff] drop-shadow-md flex items-center justify-center gap-2">
         <span role="img" aria-label="Radio" className="text-4xl">
           📻
@@ -51,7 +51,7 @@ export default function AudioRoom() {
         <span>Audio Room</span>
       </h2>
 
-      <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-8xl mx-auto">
         {episodes.map((ep, i) => (
           <div
             key={i}
@@ -75,7 +75,7 @@ export default function AudioRoom() {
                     {/* Horizontal Signal (rotated 90°) */}
                     <GiAerialSignal className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rotate-60 text-[#000] text-xl animate-pulse" />
                   </div>
-                  Speaking...
+                  Live Stream
                 </div>
               </div>
 
@@ -94,11 +94,11 @@ export default function AudioRoom() {
                   className="w-full h-full object-cover"
                 />
               </div> */}
-              <div className="relative grid grid-cols-4 items-center gap-2 mt-4 w-25">
+              <div className=" grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 items-center gap-2 mt-4 md:w-25">
                 {firstFive.map((img, i) => (
                   <div
                     key={i}
-                    className="w-5 h-5 rounded-full overflow-hidden border border-gray-600"
+                    className="w-4 h-4 rounded-full overflow-hidden border border-gray-600"
                   >
                     <img
                       src={img}
@@ -127,7 +127,7 @@ export default function AudioRoom() {
                       ✕
                     </button>
 
-                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 max-w-4xl">
+                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 max-w-5xl">
                       {images.map((img, i) => (
                         <div
                           key={i}

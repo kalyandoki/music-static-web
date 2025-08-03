@@ -23,11 +23,11 @@ const Footer = () => {
         {/* Top Footer Section */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
           {/* === Logo === */}
-          <div className="flex items-center space-x-2 bg-[#efeded] rounded-full w-22">
+          <div className="flex items-center space-x-4 bg-[#efeded] rounded-full md:w-21 md:h-20 w-10">
             <img
               src={heroImg}
               alt="SwaraCast Logo"
-              className="w-10 h-10 md:w-20 md:h-20 object-contain rounded-full"
+              className="w-10 h-10 md:w-218 md:h-18 object-contain rounded-full text-center"
             />
           </div>
           <div>
