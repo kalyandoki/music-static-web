@@ -2,7 +2,7 @@ import { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import { FaSearch } from "react-icons/fa";
 
-import heroImg from "../assets/images/nri.jpg";
+import heroImg from "../assets/images/nri1.png";
 
 export default function MainHeader() {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,12 +12,13 @@ export default function MainHeader() {
       <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
         {/* === Logo === */}
         <a href="#home">
-          <div className="flex items-center space-x-2 bg-[#efeded] rounded-full">
+          <div className="flex items-center space-x-2">
             <img
               src={heroImg}
               alt="SwaraCast Logo"
               className="w-10 h-10 md:w-18 md:h-18 object-contain rounded-full"
             />
+            <h3 className="text-[#fff] font-bold text-xl">Voice Of NRI</h3>
           </div>
         </a>
 
@@ -33,7 +34,7 @@ export default function MainHeader() {
             Podcast
           </a>
           <a href="#audio-room" className="hover:text-[#df7307fd] transition">
-            Audio Room
+            Audio Rooms
           </a>
           {/* <a href="#" className="hover:text-[#df7307fd] transition">
             Music
@@ -80,7 +81,7 @@ export default function MainHeader() {
             href="#audio-room"
             className="block hover:text-[#df7307fd] transition"
           >
-            Audio Room
+            Audio Rooms
           </a>
           {/* <a href="#" className="block hover:text-[#df7307fd] transition">
             Music

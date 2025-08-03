@@ -17,9 +17,11 @@ export default function Hero() {
           <p className="text-base sm:text-lg text-gray-300">
             Dive into music, radio, podcasts, and more — all in one place.
           </p>
-          <button className="px-6 py-3 bg-[#df7307fd] hover:bg-[#966f49fd] transition rounded-2xl font-semibold shadow-md text-white">
-            Start Listening
-          </button>
+          <a href="/radio?autoplay=true">
+            <button className="px-6 py-3 bg-[#df7307fd] hover:bg-[#966f49fd] transition rounded-2xl font-semibold shadow-md text-white">
+              🎶 Start Listening
+            </button>
+          </a>
         </div>
 
         {/* === Right Image === */}

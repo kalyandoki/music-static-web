@@ -18,7 +18,7 @@ const episodes = [
 export default function Episodes() {
   return (
     <section className="bg-black px-4 py-20 text-white">
-      <h2 className="text-4xl font-bold text-center mb-12 text-indigo-400 drop-shadow-md">
+      <h2 className="text-4xl font-bold text-center mb-12 drop-shadow-md">
         📻 Latest Episodes
       </h2>
 
@@ -30,7 +30,7 @@ export default function Episodes() {
           >
             <div className="flex gap-4 items-start">
               {/* Album Art (optional) */}
-              <div className="w-20 h-20 rounded-lg overflow-hidden shadow-md flex-shrink-0">
+              <div className="w-50 h-50 rounded-lg overflow-hidden shadow-md flex-shrink-0">
                 <img
                   src={ep.cover || ep.cover} // optional album image
                   alt={ep.title}
@@ -39,22 +39,29 @@ export default function Episodes() {
               </div>
 
               {/* Episode Details */}
-              <div className="flex-1 space-y-1">
-                <h3 className="text-xl font-semibold text-indigo-300">
+              <div className="flex-1 space-y-1 w-25 p-2">
+                <h3 className="text-xl font-semibold ml-2 text-indigo-300">
                   {ep.title}
                 </h3>
-                <p className="text-sm text-gray-400">by {ep.artist}</p>
+                <p className="text-sm ml-2 text-gray-400">by {ep.artist}</p>
+                <audio
+                  controls
+                  className="w-full mt-10 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                >
+                  <source src={ep.url} type="audio/mpeg" />
+                  Your browser does not support the audio element.
+                </audio>
               </div>
             </div>
 
             {/* Audio Player */}
-            <audio
+            {/* <audio
               controls
-              className="w-full mt-4 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              className="w-1/2 mt-4 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
             >
               <source src={ep.url} type="audio/mpeg" />
               Your browser does not support the audio element.
-            </audio>
+            </audio> */}
           </div>
         ))}
       </div>

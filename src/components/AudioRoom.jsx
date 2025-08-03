@@ -40,15 +40,15 @@ const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10];
 export default function AudioRoom() {
   const [showAll, setShowAll] = useState(false);
 
-  const firstFive = images.slice(0, 6);
+  const firstFive = images.slice(0, 5);
   const remaining = images.length - 5;
   return (
     <section className="bg-black px-4 py-20 text-white pt-30">
       <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 text-[#fff] drop-shadow-md flex items-center justify-center gap-2">
         <span role="img" aria-label="Radio" className="text-4xl">
-          📻
+          🎧
         </span>
-        <span>Audio Room</span>
+        <span>Audio Rooms</span>
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
@@ -98,7 +98,7 @@ export default function AudioRoom() {
                 {firstFive.map((img, i) => (
                   <div
                     key={i}
-                    className="w-4 h-4 rounded-full overflow-hidden border border-gray-600"
+                    className="w-8 h-8 rounded-full overflow-hidden border border-gray-600"
                   >
                     <img
                       src={img}

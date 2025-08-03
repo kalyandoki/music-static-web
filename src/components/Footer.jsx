@@ -1,4 +1,4 @@
-import heroImg from "../assets/images/nri.jpg";
+import heroImg from "../assets/images/nri1.png";
 
 import {
   FaFacebookF,
@@ -15,13 +15,16 @@ const Footer = () => {
         {/* Top Footer Section */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
           {/* === Logo === */}
-          <div className="flex items-center space-x-4 bg-[#efeded] rounded-full md:w-21 md:h-20 w-10">
-            <img
-              src={heroImg}
-              alt="SwaraCast Logo"
-              className="w-10 h-10 md:w-218 md:h-18 object-contain rounded-full text-center"
-            />
-          </div>
+          <a href="#home">
+            <div className="flex items-center">
+              <img
+                src={heroImg}
+                alt="SwaraCast Logo"
+                className="w-10 h-10 md:w-18 md:h-18 object-contain rounded-full"
+              />
+              <h3 className="text-[#fff] font-bold text-2xl">Voice Of NRI</h3>
+            </div>
+          </a>
           <div>
             <h2 className="text-lg sm:text-xl font-bold text-white mb-4 font-serif hover:text-yellow-400 transition duration-300">
               TALK TO US
@@ -72,9 +75,21 @@ const Footer = () => {
         </div>
 
         {/* Bottom Footer Section */}
-        <div className="text-center mt-12 pt-6 border-t border-gray-600 text-gray-400 text-xs sm:text-sm">
-          © {new Date().getFullYear()}{" "}
-          <span className="text-white">Voice of NRI</span>. All rights reserved.
+        <div className="text-center mt-12 pt-6 border-t border-gray-600 text-gray-400 text-xs sm:text-sm flex justify-between items-center">
+          <div>
+            © {new Date().getFullYear()}{" "}
+            <span className="text-white">Voice of NRI</span>. All rights
+            reserved.
+          </div>
+          <div className="flex justify-between items-center">
+            <a href="#terms" className="text-gray-400 hover:underline mx-2">
+              Terms & Conditions
+            </a>
+            |
+            <a href="#privacy" className="text-gray-400 hover:underline mx-2">
+              Privacy Policy
+            </a>
+          </div>
         </div>
       </div>
     </footer>
