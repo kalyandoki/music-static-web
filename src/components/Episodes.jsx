@@ -22,46 +22,40 @@ export default function Episodes() {
         📻 Latest Episodes
       </h2>
 
-      <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+      <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
         {episodes.map((ep, i) => (
           <div
             key={i}
-            className="bg-gradient-to-br from-[#1e1e1e] to-[#292929] p-6 rounded-2xl shadow-lg border border-[#333] hover:shadow-indigo-500/20 transition duration-300"
+            className="bg-gradient-to-br from-[#1e1e1e] to-[#292929] p-4 sm:p-6 rounded-2xl shadow-lg border border-[#333] hover:shadow-indigo-500/20 transition duration-300"
           >
-            <div className="flex gap-4 items-start">
-              {/* Album Art (optional) */}
-              <div className="w-50 h-50 rounded-lg overflow-hidden shadow-md flex-shrink-0">
+            <div className="flex flex-col sm:flex-row gap-4 items-center sm:items-start">
+              {/* Album Art */}
+              <div className="w-full sm:w-32 h-32 sm:h-35 rounded-lg overflow-hidden shadow-md">
                 <img
-                  src={ep.cover || ep.cover} // optional album image
+                  src={ep.cover || ep.cover}
                   alt={ep.title}
                   className="w-full h-full object-cover"
                 />
               </div>
 
               {/* Episode Details */}
-              <div className="flex-1 space-y-1 w-25 p-2">
-                <h3 className="text-xl font-semibold ml-2 text-indigo-300">
+              <div className="flex-1 w-full md:pl-6">
+                <h3 className="text-lg pl-2 sm:text-xl font-semibold text-indigo-300 mt-2 sm:mt-0">
                   {ep.title}
                 </h3>
-                <p className="text-sm ml-2 text-gray-400">by {ep.artist}</p>
+                <p className="text-sm pl-2 text-gray-400 mb-3">
+                  by {ep.artist}
+                </p>
+
                 <audio
                   controls
-                  className="w-full mt-10 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                  className="w-full md:w-10/12 rounded-2xl focus:outline-none focus:ring-2 focus:ring-indigo-500"
                 >
                   <source src={ep.url} type="audio/mpeg" />
                   Your browser does not support the audio element.
                 </audio>
               </div>
             </div>
-
-            {/* Audio Player */}
-            {/* <audio
-              controls
-              className="w-1/2 mt-4 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
-            >
-              <source src={ep.url} type="audio/mpeg" />
-              Your browser does not support the audio element.
-            </audio> */}
           </div>
         ))}
       </div>

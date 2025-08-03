@@ -17,14 +17,16 @@ export default function App() {
     const updateHash = () => {
       const newHash = window.location.hash.replace("#", "") || "home";
 
-      // Prevent browser default scroll to anchor
+      // Prevent default browser jump to anchor
       window.history.replaceState(null, "", `#${newHash}`);
-
       setHash(newHash);
 
-      // Smooth scroll to top after delay
+      // Scroll to the element smoothly
       setTimeout(() => {
-        window.scrollTo({ top: 0, behavior: "smooth" });
+        const target = document.getElementById(newHash);
+        if (target) {
+          target.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
       }, 100);
     };
 
@@ -43,26 +45,28 @@ export default function App() {
       {/* Main sections visible only for home */}
       {showMainSections && (
         <>
-          <section id="home">
-            <Hero />
-          </section>
+          <main className="pt-6 scroll-smooth">
+            <section id="home">
+              <Hero />
+            </section>
 
-          <section id="radio">
-            <RadioPlayer />
-          </section>
+            <section id="radio">
+              <RadioPlayer />
+            </section>
 
-          <section id="podcast">
-            <Podcast />
-            <Episodes />
-          </section>
+            <section id="podcast">
+              <Podcast />
+              <Episodes />
+            </section>
 
-          <section id="audio-room">
-            <AudioRoom />
-          </section>
+            <section id="audio-room">
+              <AudioRoom />
+            </section>
 
-          <section id="contact-us">
-            <Contact />
-          </section>
+            <section id="contact-us">
+              <Contact />
+            </section>
+          </main>
         </>
       )}
 
