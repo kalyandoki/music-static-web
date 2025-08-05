@@ -1,15 +1,15 @@
 export default function Contact() {
   return (
-    <section className="bg-[#ffffffee] px-6 py-20 text-white">
-      <h2 className="text-4xl font-bold text-center mb-12 text-[#000] drop-shadow-md">
+    <section className="bg-[#000] px-6 py-20 text-white font-poppins">
+      <h2 className="text-4xl font-semibold text-center mb-12 text-[#fff] drop-shadow-md">
         📬 Contact Us
       </h2>
 
-      <form className="max-w-2xl mx-auto space-y-6 bg-gradient-to-br from-[#1c1c1c] to-[#2b2b2b] p-8 rounded-2xl shadow-lg border border-[#333]">
+      <form className="max-w-xl mx-auto space-y-6 bg-[#fff] p-8 rounded-2xl shadow-lg border border-[#333]">
         <div>
           <label
             htmlFor="email"
-            className="block mb-2 text-sm font-medium text-gray-300"
+            className="block mb-2 text-sm font-medium text-[#000]"
           >
             Email Address
           </label>
@@ -17,14 +17,14 @@ export default function Contact() {
             id="email"
             type="email"
             placeholder="you@example.com"
-            className="w-full px-4 py-3 rounded-lg bg-[#2a2a2a] border border-[#444] text-white placeholder-gray-400 focus:ring-2 focus:ring-indigo-500 outline-none transition"
+            className="w-full px-4 py-3 rounded-lg bg-[#fff] border border-[#444] text-[#000] placeholder-gray-400 focus:ring-2 focus:ring-indigo-500 outline-none transition"
           />
         </div>
 
         <div>
           <label
             htmlFor="message"
-            className="block mb-2 text-sm font-medium text-gray-300"
+            className="block mb-2 text-sm font-medium text-[#000]"
           >
             Message
           </label>
@@ -32,7 +32,7 @@ export default function Contact() {
             id="message"
             placeholder="Type your message here..."
             rows="5"
-            className="w-full px-4 py-3 rounded-lg bg-[#2a2a2a] border border-[#444] text-white placeholder-gray-400 focus:ring-2 focus:ring-indigo-500 outline-none transition"
+            className="w-full px-4 py-3 rounded-lg bg-[#fff] border border-[#444] text-[#000] placeholder-gray-400 focus:ring-2 focus:ring-indigo-500 outline-none transition"
           ></textarea>
         </div>
 

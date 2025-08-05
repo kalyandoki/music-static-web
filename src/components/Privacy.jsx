@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Privacy() {
   return (
-    <div className="max-w-6xl mx-auto px-6 py-12 bg-[#ffffffc8] text-gray-900 rounded-xl shadow-xl">
-      <h1 className="text-3xl md:text-4xl font-bold mb-8 text-center text-[#b86609]">
+    <div className="max-w-6xl mx-auto px-6 py-12 bg-[#ffffffc8] text-gray-900 rounded-xl shadow-xl font-poppins">
+      <h1 className="text-3xl md:text-4xl font-bold mb-4 text-center text-[#b86609]">
         Privacy Policy - Voice of NRI App
       </h1>
 

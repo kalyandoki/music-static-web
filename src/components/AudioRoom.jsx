@@ -43,8 +43,8 @@ export default function AudioRoom() {
   const firstFive = images.slice(0, 5);
   const remaining = images.length - 5;
   return (
-    <section className="bg-black px-4 py-20 text-white pt-30">
-      <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 text-[#fff] drop-shadow-md flex items-center justify-center gap-2">
+    <section className="bg-black px-4 py-20 text-white pt-30 font-poppins">
+      <h2 className="text-3xl sm:text-4xl font-semibold text-center mb-12 text-[#fff] drop-shadow-md flex items-center justify-center gap-2">
         <span role="img" aria-label="Radio" className="text-4xl">
           🎧
         </span>

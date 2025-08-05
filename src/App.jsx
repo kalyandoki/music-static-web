@@ -45,14 +45,14 @@ export default function App() {
   const showMainSections = hash !== "terms" && hash !== "privacy";
 
   return (
-    <div className="bg-black text-white min-h-screen font-sans">
+    <div className="bg-black text-white w-full max-w-[100vw] overflow-x-hidden font-poppins">
       {/* Header always visible */}
       <MainHeader />
 
       {/* Main sections visible only for home */}
       {showMainSections && (
         <>
-          <main className="pt-6 scroll-smooth">
+          <main className="scroll-smooth">
             <section id="home">
               <Hero />
             </section>
@@ -79,14 +79,14 @@ export default function App() {
 
       {/* Show Terms */}
       {!showMainSections && hash === "terms" && (
-        <section className="min-h-screen flex items-center justify-center px-4 py-20">
+        <section className="min-h-screen flex items-center justify-center px-4 py-20 mt-8">
           <Terms />
         </section>
       )}
 
       {/* Show Privacy */}
       {!showMainSections && hash === "privacy" && (
-        <section className="min-h-screen flex items-center justify-center px-4 py-20">
+        <section className="min-h-screen flex items-center justify-center px-4 py-20 mt-8">
           <Privacy />
         </section>
       )}

@@ -2,7 +2,7 @@ import music1 from "../assets/images/now1.jpg";
 
 export default function NowPlaying() {
   return (
-    <section className="bg-gradient-to-br from-[#0a0a0a] via-[#121212] to-[#1e1e1e] px-4 py-20 text-white">
+    <section className="bg-gradient-to-br from-[#0a0a0a] via-[#121212] to-[#1e1e1e] px-4 py-20 text-white font-poppins">
       <h2 className="text-4xl font-bold text-center mb-12 tracking-tight text-indigo-400 drop-shadow-md">
         🎶 Now Playing
       </h2>

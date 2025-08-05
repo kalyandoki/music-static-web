@@ -8,35 +8,37 @@ export default function MainHeader() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="bg-black bg-opacity-80 backdrop-blur-md sticky top-0 z-50 shadow-lg">
-      <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+    <header className="bg-black fixed top-0 left-0 w-full h-25 z-50 bg-opacity-80 backdrop-blur-md shadow-lg font-poppins">
+      <div className="max-w-8xl mx-auto px-4 py-3 flex justify-between items-center">
         {/* === Logo === */}
         <a href="#home">
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center ">
             <img
               src={heroImg}
               alt="SwaraCast Logo"
-              className="w-10 h-10 md:w-18 md:h-18 object-contain rounded-full"
+              className="w-10 h-10 md:w-18 md:h-18 object-contain"
             />
-            <h3 className="text-[#fff] font-bold text-xl">Voice Of NRI</h3>
+            <h3 className="font-bold text-xl mt-4 md:mt-10 text-[#fff] font-serif">
+              Voices Of NRI
+            </h3>
           </div>
         </a>
 
         {/* === Desktop Nav === */}
-        <nav className="hidden md:flex space-x-6 text-lg md:text-xl text-white">
-          <a href="#home" className="hover:text-[#df7307fd] transition">
+        <nav className="hidden md:flex space-x-8 text-lg md:text-xl text-white">
+          <a href="#home" className="hover:text-[#E0610C] transition">
             Home
           </a>
-          <a href="#radio" className="hover:text-[#df7307fd] transition">
+          <a href="#radio" className="hover:text-[#E0610C] transition">
             Radio
           </a>
-          <a href="#podcast" className="hover:text-[#df7307fd] transition">
+          <a href="#podcast" className="hover:text-[#E0610C] transition">
             Podcast
           </a>
-          <a href="#audio-room" className="hover:text-[#df7307fd] transition">
+          <a href="#audio-room" className="hover:text-[#E0610C] transition">
             Audio Rooms
           </a>
-          {/* <a href="#" className="hover:text-[#df7307fd] transition">
+          {/* <a href="#" className="hover:text-[#E0610C] transition">
             Music
           </a> */}
         </nav>
@@ -48,7 +50,7 @@ export default function MainHeader() {
             placeholder="Search..."
             className="px-3 py-1 rounded-md bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500"
           />
-          <button className="bg-[#df7307fd] hover:bg-[#df730798] px-4 py-2 rounded-md font-semibold text-sm text-white transition">
+          <button className="bg-[#E0610C] hover:bg-[#df730798] px-4 py-2 rounded-md font-semibold text-sm text-white transition">
             Sign In
           </button>
         </div>
@@ -65,25 +67,22 @@ export default function MainHeader() {
       {/* === Mobile Menu === */}
       {isOpen && (
         <div className="md:hidden bg-[#111] text-white px-6 pb-4 space-y-3 animate-slide-down">
-          <a href="#home" className="block hover:text-[#df7307fd] transition">
+          <a href="#home" className="block hover:text-[#E0610C] transition">
             Home
           </a>
-          <a href="#radio" className="block hover:text-[#df7307fd] transition">
+          <a href="#radio" className="block hover:text-[#E0610C] transition">
             Radio
           </a>
-          <a
-            href="#podcast"
-            className="block hover:text-[#df7307fd] transition"
-          >
+          <a href="#podcast" className="block hover:text-[#E0610C] transition">
             Podcast
           </a>
           <a
             href="#audio-room"
-            className="block hover:text-[#df7307fd] transition"
+            className="block hover:text-[#E0610C] transition"
           >
             Audio Rooms
           </a>
-          {/* <a href="#" className="block hover:text-[#df7307fd] transition">
+          {/* <a href="#" className="block hover:text-[#E0610C] transition">
             Music
           </a> */}
           <input
@@ -91,7 +90,7 @@ export default function MainHeader() {
             placeholder="Search..."
             className="w-full px-3 py-2 mt-2 rounded-md bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500"
           />
-          <button className="w-full py-2 bg-[#df7307fd] hover:bg-[#df730791] rounded-md font-semibold text-white transition">
+          <button className="w-full py-2 bg-[#E0610C] hover:bg-[#df730791] rounded-md font-semibold text-white transition">
             Sign In
           </button>
         </div>

@@ -1,32 +1,41 @@
-import { useEffect, useRef } from "react";
-
-import { FaBroadcastTower } from "react-icons/fa";
+import { useEffect, useContext } from "react";
 import radioImg from "../assets/images/rd2.webp";
 import radioBg from "../assets/images/hero-bg1.jpg";
 import heroImg from "../assets/images/nri1.png";
 
+import { RadioContext } from "../context/RadioContext";
+
 const RadioPlayer = () => {
-  const audioRef = useRef(null);
+  const { radioRef } = useContext(RadioContext);
 
   useEffect(() => {
     const searchParams = new URLSearchParams(window.location.search);
-    const shouldAutoplay = searchParams.get("autoplay");
-
-    if (shouldAutoplay === "true" && audioRef.current) {
-      audioRef.current.play().catch((err) => {
+    if (searchParams.get("autoplay") === "true" && radioRef.current) {
+      radioRef.current.play().catch((err) => {
         console.log("Autoplay blocked or failed:", err);
       });
     }
-  }, []);
+  });
+
+  // When playing radio, pause other audios (Episodes will handle themselves)
+  const handleRadioPlay = () => {
+    const allAudios = document.querySelectorAll("audio");
+    allAudios.forEach((audio) => {
+      if (audio !== radioRef.current && !audio.paused) {
+        audio.pause();
+        audio.currentTime = 0;
+      }
+    });
+  };
 
   return (
     <section
-      className="bg-cover bg-center bg-no-repeat text-white pt-10"
+      className="bg-cover bg-center bg-no-repeat text-white pt-10 font-poppins"
       style={{ backgroundImage: `url(${radioBg})` }}
     >
       <div className="bg-black/70 px-4 py-20">
         {/* === Section Heading === */}
-        <h3 className="text-3xl md:text-4xl font-extrabold text-white mb-12 text-center">
+        <h3 className="text-3xl md:text-4xl font-semibold text-white mb-12 text-center">
           📻 Radio
         </h3>
 
@@ -44,7 +53,6 @@ const RadioPlayer = () => {
             {/* === Right Side Content === */}
             <div className="text-center md:text-left space-y-6">
               <div className="flex justify-center md:justify-start items-center gap-3">
-                {/* <FaBroadcastTower className="text-[#df7307fd] text-4xl animate-pulse" /> */}
                 <img
                   src={heroImg}
                   alt="SwaraCast Logo"
@@ -70,7 +78,8 @@ const RadioPlayer = () => {
               {/* === Audio Player === */}
               <div className="flex justify-center md:justify-start">
                 <audio
-                  ref={audioRef}
+                  ref={radioRef}
+                  onPlay={handleRadioPlay}
                   controls
                   className="w-full md:w-3/4 rounded-4xl focus:outline-none focus:ring-2 focus:ring-[#df7307fd] bg-white"
                 >

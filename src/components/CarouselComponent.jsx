@@ -2,15 +2,18 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 
 // ✅ Import your images
-import img1 from "../assets/images/mu4.jpeg";
-import img2 from "../assets/images/mu3.jpg";
-import img4 from "../assets/images/mu2.webp";
-import img3 from "../assets/images/mu1.jpeg";
-import img5 from "../assets/images/mu6.webp";
-import img6 from "../assets/images/hero-music.jpg";
+import img1 from "../assets/images/von1.webp";
+import img2 from "../assets/images/von9.jpg";
+import img3 from "../assets/images/von2.webp";
+import img4 from "../assets/images/von8.jpg";
+import img5 from "../assets/images/von3.png";
+import img6 from "../assets/images/von7.avif";
+import img7 from "../assets/images/mu22.jpg";
+import img8 from "../assets/images/von6.webp";
+import img9 from "../assets/images/von5.png";
 
 // ✅ Images array
-const images = [img1, img2, img4, img5, img6, img3];
+const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9];
 
 const CarouselComponent = () => {
   return (
@@ -34,7 +37,10 @@ const CarouselComponent = () => {
         {images.map((img, index) => (
           <div
             key={index}
-            className="w-full h-[300px] pb-18 pl-4 pr-4 pt-15 md:pt-20 sm:h-[300px] md:h-[400px] lg:h-[450px] relative"
+            className="w-full relative 
+  h-[300px] sm:h-[350px] md:h-[450px] lg:h-[520px] xl:h-[580px] 2xl:h-[750px]
+  pt-[60px] sm:pt-[70px] md:pt-[80px] lg:pt-[90px] xl:pt-[100px] 2xl:pt-[110px]
+  pb-[72px] px-4"
           >
             <img
               src={img}

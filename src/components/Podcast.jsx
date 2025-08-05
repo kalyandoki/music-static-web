@@ -59,8 +59,8 @@ const Podcast = () => {
   const [selected, setSelected] = useState(null);
 
   return (
-    <section className="bg-[#0f0f0f] text-white py-16 px-4 pt-30">
-      <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
+    <section className="bg-[#0f0f0f] text-white py-16 px-4 pt-30 font-poppins">
+      <h2 className="text-3xl md:text-4xl font-semibold text-center mb-16">
         🎙️ Podcasts
       </h2>
 
